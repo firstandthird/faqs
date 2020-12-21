@@ -1,0 +1,2 @@
+# faqs
+Accessible FAQs module
