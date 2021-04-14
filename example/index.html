@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs example</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .no-animate [aria-hidden=false] {
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="heading-3">FAQs</h1>
+
+  <dl class="animate" data-module="Faqs" data-module-animate-height="true">
+    <dt>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="question-1"
+        data-action="toggle">Question 1?</button>
+    </dt>
+    <dd id="question-1" class="margin-none padding-none" aria-hidden="true">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </dd>
+    <dt>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="question-2"
+        data-action="toggle">Question 2?</button>
+    </dt>
+    <dd id="question-2" class="margin-none padding-none" aria-hidden="true">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </dd>
+  </dl>
+
+  <h1 class="heading-3">FAQs (no animation, open all)</h1>
+
+  <dl class="no-animate" data-module="Faqs" data-module-animate-height="false" data-module-close-others="false">
+    <dt>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="question-3"
+        data-action="toggle">Question 3?</button>
+    </dt>
+    <dd id="question-3" class="margin-none padding-none" aria-hidden="true">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </dd>
+    <dt>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="question-4"
+        data-action="toggle">Question 4?</button>
+    </dt>
+    <dd id="question-4" class="margin-none padding-none" aria-hidden="true">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </dd>
+  </dl>
+
+  <script src="../dist/faqs.js"></script>
+</body>
+</html>
