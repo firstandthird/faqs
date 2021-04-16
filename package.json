@@ -9,10 +9,9 @@
   "scripts": {
     "build": "microbundle",
     "dev": "concurrently 'microbundle watch --external none' 'serve'",
-    "test": "jest --coverage",
-    "pretest": "microbundle --external none",
-    "prepublishOnly": "npm run lint && npm run test && microbundle",
-    "lint": "eslint index.js ./test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run lint && microbundle",
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -36,14 +35,11 @@
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
-    "babel-jest": "^26.6.3",
     "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
     "eslint-config-firstandthird": "^6.0.3",
     "eslint-plugin-compat": "^3.9.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.5",
-    "jest": "^26.6.3",
     "microbundle": "^0.13.0",
     "serve": "^11.3.2"
   }
