@@ -5,8 +5,7 @@
   },
   "extends": "firstandthird",
   "plugins": [
-    "compat",
-    "jest"
+    "compat"
   ],
   "rules": {
     "compat/compat": 2
