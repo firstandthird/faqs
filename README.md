@@ -4,7 +4,7 @@
   <a href="https://github.com/firstandthird/domodule/actions">
     <img src="https://img.shields.io/github/workflow/status/firstandthird/faqs/Lint/main?label=Lint&style=for-the-badge" alt="Lint Status"/>
   </a>
-  <img src="https://img.shields.io/npm/v/firstandthird/faqs.svg?label=npm&style=for-the-badge" alt="NPM" />
+  <img src="https://img.shields.io/npm/v/@firstandthird/faqs.svg?label=npm&style=for-the-badge" alt="NPM" />
 </p>
 
 Accessible FAQs module.
@@ -55,7 +55,7 @@ import Faqs from '@firstandthird/faqs'
 </dl>
 ```
 
-Full [example here](./examples/index.html).
+Full [example here](./example/index.html).
 
 ---
 
