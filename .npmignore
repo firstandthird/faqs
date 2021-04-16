@@ -8,3 +8,5 @@ test/*
 .editorconfig
 .node-version
 .travis.yml
+coverage
+.github
