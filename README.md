@@ -57,7 +57,6 @@ import Faqs from '@firstandthird/faqs'
 
 Full [example here](./examples/index.html).
 
-
 ---
 
 <a href="https://firstandthird.com"><img src="https://firstandthird.com/_static/ui/images/safari-pinned-tab-62813db097.svg" height="32" width="32" align="right"></a>
