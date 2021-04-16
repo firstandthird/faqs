@@ -1,0 +1,46 @@
+{
+  "name": "@firstandthird/faqs",
+  "version": "1.0.0",
+  "description": "Accessible FAQs module",
+  "source": "index.js",
+  "main": "dist/faqs.js",
+  "exports": "./dist/faqs.modern.js",
+  "module": "dist/faqs.module.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "concurrently 'microbundle watch --external none' 'serve'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run lint && microbundle",
+    "lint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/faqs.git"
+  },
+  "keywords": [
+    "accessible",
+    "faq",
+    "accordion"
+  ],
+  "author": "First+Third",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/faqs/issues"
+  },
+  "homepage": "https://github.com/firstandthird/faqs#readme",
+  "dependencies": {
+    "domassist": "^2.2.0",
+    "domodule": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "concurrently": "^6.0.2",
+    "eslint": "^7.24.0",
+    "eslint-config-firstandthird": "^6.0.3",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "microbundle": "^0.13.0",
+    "serve": "^11.3.2"
+  }
+}
