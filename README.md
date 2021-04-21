@@ -31,7 +31,7 @@ import Faqs from '@firstandthird/faqs'
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `animateHeight` | _{Boolean}_ | `true` | Enable expand/collapse height animation (requires CSS, [see example](styles.css)) |
+| `animateHeight` | _{Boolean}_ | `false` | Enable expand/collapse height animation (requires CSS, [see example](styles.css)) |
 | `closeOthers` | _{Boolean}_ | `true` | Only allows one expanded element at a time |
 | `hash` | _{Boolean}_ | `true` | Expand elements whose ID matches the current URL hash |
 
