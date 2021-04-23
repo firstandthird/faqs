@@ -1,6 +1,6 @@
 {
   "name": "@firstandthird/faqs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Accessible FAQs module",
   "source": "index.js",
   "main": "dist/faqs.js",
