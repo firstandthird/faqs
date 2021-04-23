@@ -12,6 +12,7 @@ export default class Faqs extends Domodule {
 
   postInit() {
     this.toggles = this.find('[data-action="toggle"]');
+    this.animating = false;
 
     if (typeof this.options.animateHeight === 'string') {
       this.options.animateHeight = this.options.animateHeight === 'true';
@@ -57,6 +58,12 @@ export default class Faqs extends Domodule {
    * @param {HTMLElement} toggle Toggle button
    */
   toggle(toggle) {
+    if (this.animating) {
+      return;
+    }
+
+    this.animating = true;
+
     const isExpanded = this.isExpanded(toggle);
 
     if (isExpanded) {
@@ -84,6 +91,7 @@ export default class Faqs extends Domodule {
 
       once(target, 'transitionend', () => {
         target.style.height = 'auto';
+        this.animating = false;
       });
     }
 
@@ -107,6 +115,7 @@ export default class Faqs extends Domodule {
 
         requestAnimationFrame(() => {
           target.style.height = '0';
+          this.animating = false;
         });
       });
     }
